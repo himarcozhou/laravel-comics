@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+    return view('index', [
+        'title' => 'CRYPTO TO THE MOON 🚀🚀🚀',
+        'caption' => 'We got diamond hands 💎🙌',
+        'cryptoselected' => ['ETC','DOGE','BTC'],
+        'currencyselected' => ['USD','EUR']
+    ]);
 });
+Route::get('/actioncomics', function () {
+    $datiActioncomics = config("pasta");
+
+    $datiView = [
+        "actioncomicsList" => $datiActioncomics
+    ];
+    return view("actioncomics", $datiView );
+})->name("page-actioncomics");
+
+Route::get('/americanvampire', function () {
+    return view("americanvampire");
+})->name("page-americanvampire");
+
