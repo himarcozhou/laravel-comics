@@ -1,0 +1,31 @@
+.details {
+
+    h1 {
+        color: rgb(23, 48, 49);
+        margin-bottom: 20px;
+    }
+
+    .price {
+        max-width: 570px;
+        padding: 10px 20px;
+        background-color: green;
+        color: #fff;
+        margin-bottom: 20px;
+
+        button {
+            padding: 0 0 0 10px;
+            color: #fff;
+            border-left: 2px solid black;
+        }
+    }
+
+    .text {
+        max-width: 570px;
+        line-height: 25px;
+    }
+}
+
+.talent {
+    padding: 200px 0;
+    background-color: #f3f0f0;
+}

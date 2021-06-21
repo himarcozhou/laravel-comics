@@ -1,0 +1,29 @@
+.first-section {
+    height: 400px;
+    background-image: url('/img/jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+
+    img {
+        padding-left: 150px;
+        position: absolute;
+        bottom: 218px;
+    }
+}
+.third-section {
+    padding: 20px;
+    background-color: dodgerblue;
+
+    ul li {
+        color: #fff;
+        font-size: 12px;
+
+        img {
+            width: 50px;
+        }
+    }
+}
+.fourth-section {
+    padding: 30px;
+    background-color: #f3f0f0;
+}

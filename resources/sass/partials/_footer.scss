@@ -1,0 +1,45 @@
+.footer-top {
+    background-image: url('/img/footer-bg.jpg');
+
+    .info {
+        padding-top: 30px;
+
+        ul li {
+            line-height: 30px;
+        }
+        a {
+            color: #757474dc;
+        }
+    }
+
+    .logo-footer img {
+        width: 400px;
+    }
+}
+
+.footer-bottom {
+    padding: 20px 5px 10px 5px;
+    background-color: rgb(59, 59, 59);
+    
+
+    .button-footer button {
+        padding: 10px;
+        background-color: rgb(59, 59, 59);
+        border-color: dodgerblue;
+        cursor: pointer;
+    }
+
+    .social {
+        span {
+            font-weight: bold;
+            color: dodgerblue;
+        }
+        i {
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background-color: gray;
+            color: #373737;
+        }
+    }
+}

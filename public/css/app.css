@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mr {
+  margin-right: 10px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.jspace {
+  justify-content: space-between;
+}
+
+.dodgerblue {
+  color: dodgerblue;
+}
+
+.green {
+  background-color: green;
+  border: none;
+}
+
+.mr2 {
+  margin-right: 30px;
+}
+
+.ml {
+  margin-left: 50px;
+}
+
+.bw {
+  font-weight: bold;
+  color: #fff;
+}
+
+header {
+  font-family: "Oswald", sans-serif;
+}
+
+.header-top {
+  background-color: dodgerblue;
+  padding: 4px;
+}
+
+.header-top .power {
+  justify-content: right;
+  font-size: 10px;
+  color: #fff;
+}
+
+.main-header {
+  position: relative;
+  padding: 20px 0;
+}
+
+.main-header img {
+  width: 70px;
+  margin-right: 100px;
+}
+
+.main-header ul li a {
+  font-weight: bold;
+  color: #333;
+}
+
+.main-header .search {
+  margin-left: 30px;
+}
+
+.main-header .search:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 3px;
+  background-color: dodgerblue;
+  right: 301px;
+  bottom: 40px;
+}
+
+.first-section {
+  height: 400px;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.first-section img {
+  padding-left: 150px;
+  position: absolute;
+  bottom: 218px;
+}
+
+.third-section {
+  padding: 20px;
+  background-color: dodgerblue;
+}
+
+.third-section ul li {
+  color: #fff;
+  font-size: 12px;
+}
+
+.third-section ul li img {
+  width: 50px;
+}
+
+.fourth-section {
+  padding: 30px;
+  background-color: #f3f0f0;
+}
+
+.footer-top {
+  background-image: url("/img/footer-bg.jpg");
+}
+
+.footer-top .info {
+  padding-top: 30px;
+}
+
+.footer-top .info ul li {
+  line-height: 30px;
+}
+
+.footer-top .info a {
+  color: #757474dc;
+}
+
+.footer-top .logo-footer img {
+  width: 400px;
+}
+
+.footer-bottom {
+  padding: 20px 5px 10px 5px;
+  background-color: #3b3b3b;
+}
+
+.footer-bottom .button-footer button {
+  padding: 10px;
+  background-color: #3b3b3b;
+  border-color: dodgerblue;
+  cursor: pointer;
+}
+
+.footer-bottom .social span {
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+.footer-bottom .social i {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: gray;
+  color: #373737;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
