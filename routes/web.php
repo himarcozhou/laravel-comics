@@ -34,9 +34,11 @@ Route::get('/', function () {
     $datiView = [
         "actioncomicsList" => $comics,
     ];
-//usiamo compact per far vedere l'array comics
-return view("index", $datiView);
+    return view("index", $datiView);
 })->name('index');
+//usiamo compact per far vedere l'array comics
+//     return view('index', compact('comics'));
+// })->name('index');
 
 
 

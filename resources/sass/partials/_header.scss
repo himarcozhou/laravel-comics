@@ -4,20 +4,25 @@ header{
 
 
 .header-top {
+    font-family: 'Open Sans', sans-serif;
     background-color: dodgerblue;
     padding: 4px;
 
-    .power{
-        justify-content: right;
-        font-size: 10px;
+    .flex{
+        justify-content: flex-end;
+        font-size: 12px;
         color: #fff;
+        div{
+            margin-left:60px;
+        }
     }
 }
 
 .main-header {
+    width: 100%;
     position: relative;
-    padding: 20px 0;
     img {
+        padding: 20px 0;
         width: 70px;
         margin-right: 100px;
     }
@@ -27,14 +32,42 @@ header{
     }
     .search {
          margin-left: 30px;
+         div{
+             border-bottom: solid 2px dodgerblue;
+             right: 15px;
+             left: 15px;
+             bottom: 0;
+             display: flex;
+             align-content: center;
+             align-items: flex-end;
+             justify-self: center;
+             justify-content: flex-end;
+             width: 100px;
+            }
+        }
+}
+.navbar-menu {
+    width: calc(100%-170px);
+    height: 100%;
+    ul{
+        height: inherit;
     }
-    .search:before {
-        content: "";
-        position: absolute;
-        width: 110px;
-        height: 3px;
-        background-color: dodgerblue;
-        right: 301px;
-        bottom: 40px;
+    li{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        align-content: center;
+        margin: 0 20px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.75;
+        }
     }
+    a{
+        font-size: 14;
+    }
+}
+.active{
+    border-bottom: solid 5px dodgerblue;
 }
