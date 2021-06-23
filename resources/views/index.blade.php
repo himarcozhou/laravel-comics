@@ -3,6 +3,7 @@
 @section('page_title', 'DC Comics')
 
 @section('content')
+
     <main>
         <section class="first-section">
             <div class="container">
@@ -12,6 +13,7 @@
         <section class="second-section">
             <div class="container">
                 <ul class="comics-list">
+                
                     @foreach ($actioncomicsList as $key => $comic)
                         <li>
                             <a href="">
@@ -22,30 +24,29 @@
                     @endforeach 
                  </ul>
             </div>
-            <div class="button-ssection container flex justify">
-                <button type="submit">LOAD MORE</button>
+            <div class="button-section container flex justify">
             </div>
         </section>
         <section class="third-section">
             <ul class="flex justify align-items">
                 <li>
-                    <img src="./img/digital-comics.png" alt="">
+                    <img src="{{ asset('img/buy-comics-digital-comics.png') }}">
                 </li>
                 <li class="mr2">DIGITAL COMICS</li>
                 <li>
-                    <img src="./img/merchandise.png" alt=""> 
+                    <img src="{{ asset('img/buy-comics-merchandise.png') }}">
                 </li>
                 <li class="mr2">DC MERCHANDISE</li>
                 <li>
-                    <img src="./img/subscription.png" alt="">
+                    <img src="{{ asset('img/buy-comics-subscriptions.png') }}">
                 </li>
                 <li class="mr2">SUBSCRIPTION</li>
                 <li>
-                    <img src="./img/shop.png" alt="">
+                    <img src="{{ asset('img/buy-comics-shop-locator.png') }}">
                 </li>
                 <li class="mr2">COMIC SHOP LOCATOR</li>
                 <li>
-                    <img src="./img/power-visa.png" alt="">
+                    <img id="img-svg" src="{{ asset('img/buy-dc-power-visa.svg') }}">
                 </li>
                 <li>DC POWER VISA</li>
             </ul>

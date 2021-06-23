@@ -1,7 +1,15 @@
 @php
-$RouteGetName = Request::route()->getName();
+
+function setLinkClass($pageName){
+    $RouteGetName = Request::route()->getName();
+    return $RouteGetName == $pageName ? 'active' : '';
+}
+
+
 @endphp
 <header>
+
+
     <div class="header-top">
         <div class="container flex">
             <div class="">DC POWER<span>&#8482;</span> VISA <span>&#174;</span></div>
@@ -12,17 +20,26 @@ $RouteGetName = Request::route()->getName();
     </div>
 
     <div class="main-header flex">
-        <div class="container flex align-items">
+        <div class="container f-center">
             <a class="navbar-brand" href="{{ route('index') }}">
                 <img src="{{ asset('img/dc-logo.png') }}" alt="">
             </a>
             <div class="navbar-menu">
                 <ul class="flex jspace">
-                    <li class=" {{$RouteGetName == 'pagina-prodotti' ? 'active' : '' }}">
+
+                    {{-- @foreach ($navtabList as $key => $tab)
+                        <li class=" {{setLinkClass('pagina-prodotti') }}">
+                        <a href="{{ $tab['link'] }}">{{ $tab['name'] }}</a>
+                    </li>
+                    @endforeach  --}}
+
+                    <li class="{{setLinkClass('page-comics')}}">
+                        {{-- <a href="{{route('characters')}}">CHARACTERS</a> --}}
                         <a href="">CHARACTERS</a>
                     </li>
                     <li class="active">
                         <a href="">COMICS</a>
+                        {{-- <a href="{{route('comics')}}">COMICS</a> --}}
                     </li>
                     <li class="">
                         <a href="">MOVIES</a>

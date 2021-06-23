@@ -1,11 +1,21 @@
+footer{
+    font-size: $font_sizefooterlink;
+}
+
 .footer-top {
     background-image: url('/img/footer-bg.jpg');
-
+    
     .info {
         padding-top: 30px;
 
-        ul li {
-            line-height: 30px;
+        ul {
+            flex-direction: column;
+            lh{
+                font-size: 18;
+            }
+            li{
+                font-size: $font_sizefooterlink;
+            }
         }
         a {
             color: #757474dc;
@@ -18,28 +28,36 @@
 }
 
 .footer-bottom {
-    padding: 20px 5px 10px 5px;
+    font-size: 16;
+    padding: 20px;
     background-color: rgb(59, 59, 59);
     
+    .button-footer {
 
-    .button-footer button {
-        padding: 10px;
-        background-color: rgb(59, 59, 59);
-        border-color: dodgerblue;
-        cursor: pointer;
+        button {
+            font-size: 16;
+            background-color: transparent;
+            padding: 10px;
+            border: 2px solid $primary-color;
+            cursor: pointer;
+            &:active{
+                border: 2px solid $primary-color;
+            }
+        }
     }
 
     .social {
         span {
             font-weight: bold;
-            color: dodgerblue;
+            color: $primary-color;
         }
-        i {
-            padding: 5px;
-            border: 1px solid gray;
-            border-radius: 15px;
-            background-color: gray;
-            color: #373737;
+        .img-box{
+            max-width: 50px;
+            cursor: pointer;
+        }
+        img {
+            padding: 7px;
+            border-radius: 50%;
         }
     }
 }

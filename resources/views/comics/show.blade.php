@@ -19,6 +19,11 @@
                 <div class="text"> {!! $comic['body'] !!} </div>
             </div>
         </section>
+        <div class="load-button">
+                <button>
+                    LOAD MORE
+                </button>
+            </div>
         <section class="talent">
         </section>
     </main>    

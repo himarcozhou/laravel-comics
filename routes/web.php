@@ -27,18 +27,45 @@ Route::get('/', function() {
 
 
 Route::get('/', function () {
-
     //get comics list
     $comics = config('comics');
     
     $datiView = [
         "actioncomicsList" => $comics,
     ];
+    //dump($datiView);
     return view("index", $datiView);
 })->name('index');
 //usiamo compact per far vedere l'array comics
 //     return view('index', compact('comics'));
 // })->name('index');
+
+Route::get('/comics', function () {
+    return view("");
+})->name("page-comics");
+
+// Route::get('/', function () {
+
+//     //get comics list
+//     $navtabs = config('navtabs');
+    
+//     $navtabsView = [
+//         "navtabList" => $navtabs,
+//     ];
+//     //dump($datiView);
+//     return view("index", $navtabsView);
+// })->name('index');
+
+
+
+
+
+
+
+
+
+
+
 
 
 

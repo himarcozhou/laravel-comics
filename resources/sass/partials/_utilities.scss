@@ -1,18 +1,35 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: sans-serif;
+    overflow-x: hidden;
+    font-family: $font_secondary;
+    font-size: $font_size;
 }
-.container {
-    width: 1170px;
-    margin: 0 auto;
-}
-.flex {
+.flex{
     display: flex;
+    align-content: center
+}
+.flexcolcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-center{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+}
+.justify {
+    justify-content: center;
+}
+.jspace {
+    justify-content: space-between;
 }
 ul {
     list-style: none;
@@ -29,17 +46,8 @@ a {
 .mb {
     margin-bottom: 10px;
 }
-.align-items {
-    align-items: center;
-}
-.justify {
-    justify-content: center;
-}
-.jspace {
-    justify-content: space-between;
-}
 .dodgerblue {
-    color: dodgerblue;
+    color: $primary-color;
 }
 .green {
     background-color: green;
@@ -54,4 +62,100 @@ a {
 .bw {
     font-weight: bold;
     color: #fff;
+    font-family: $font_primary;
 }
+
+$text-up: uppercase;
+
+
+ul{
+    @include list_reset;
+    a{
+        color: $fontwhite;
+    }
+}
+
+body{
+    @media screen and (min-width: 1500px) {
+        margin: auto;
+        max-width: 1500px;
+        overflow-x: hidden;
+    }
+}
+
+
+h1{
+    font-weight: lighter;
+    font-size: $font_sizeh1;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+h2{
+    font-weight: lighter;
+    font-size: $font_sizeh2;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+h3{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh3;
+}
+h4{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh4;
+}
+h5{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh5;
+}
+h6{
+    font-weight: lighter;
+    font-family: $font_primary;
+    font-size: $font_sizeh6;
+}
+
+.undertitles{
+    font-family: $font_secondary;
+    font-size: $font_sizeutmain;
+}
+
+.img-box{
+    @include imgfit;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// x in searchbox
+.btn-link{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    right: 60px;
+    cursor: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn-link i {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    font-size: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+

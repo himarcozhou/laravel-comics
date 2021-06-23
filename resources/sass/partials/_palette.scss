@@ -1,0 +1,94 @@
+$bg-main: #1c1c1c;
+$c-grey: #303030;
+$text-color: #fff;
+$primary-color: dodgerblue;
+
+
+
+
+
+//bg
+$bgwhite: #FFFFFF; //bgwhite
+$bgwhiteop: #FFFFFF80; 
+$bgyellow: #E9D758; //btn yellow
+$bgsalmon: #E56768; //bgsalmon, btn salmon
+$bgsalmonop: #DA5F60E6; //hero layer
+$bgdarkgrey: #454545;
+$bgdarkgreyblue: #3D404F;
+$bgblack: black;
+
+//fontcolor
+$fontwhite: white;
+$fontwhiteop: #FFFFFFCC; //undertitles
+$fontyellow: #E9D758;
+$fontgreen: #79B530;
+$fontsalmon: #E56768;
+$fontgrey1: #8B8B8A; 
+$fontgrey2: #7F7F7F;
+$fontgreyblue: #74777B;
+$fontgreyblue2: #70727E; //Upcoming Events > event fontcolor
+$fontgreyblue3: #5C5E6C;
+$fontdarkgrey: #454545; //bg abs_msg
+$fontdarkgreyblue: #3D404F; //primary font color
+$fontdarkgrey2: #3F3F3F;
+$fontdarkgreyblue2: #223441; 
+$fontblacks2: #252525;
+$fontblacks: #151515;
+$fontblack: black;
+
+//fill colors
+$fcolorwhite: white;
+$fcolorlightgreen: #69DE89;
+$fcolorgreen: #82B541;
+$fcolorsalmon : #E56768;
+$fcolorblack : black;
+
+//border colors
+$bcolorwhite: white;
+$bcolorwhite2: #ECECEE;
+$bcolorwhiteblue: #E5ECEF;
+$bcolorwhite3: #EAEAEA;
+$bcoloryellow: #E9D758;
+$bcolorlightgrey: #CCCCCC;
+$bcolorgreen: #79B530;
+$bcolorsalmon: #E56768;
+$bcolorblack: black;
+
+//Browse through courses btn:hover
+$hoverbrowsebgcolor: #DD3333;
+$fontgrey: #afafaf; //font bs abs_msg
+$bgmenu: rgb(56, 56, 56);
+
+
+
+.details {
+
+    h1 {
+        color: rgb(23, 48, 49);
+        margin-bottom: 20px;
+    }
+
+    .price {
+        max-width: 570px;
+        padding: 10px 20px;
+        background-color: green;
+        color: #fff;
+        margin-bottom: 20px;
+
+        button {
+            padding: 0 0 0 10px;
+            color: #fff;
+            border-left: 2px solid black;
+        }
+    }
+
+    .text {
+        max-width: 570px;
+        line-height: 25px;
+    }
+}
+
+.talent {
+    padding: 200px 0;
+    background-color: #f3f0f0;
+}

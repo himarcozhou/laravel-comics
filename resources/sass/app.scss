@@ -1,11 +1,16 @@
+
+/* File generici che servono per tutto il sito */
+@import "partials/palette";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/framework.scss";
 @import 'partials/utilities';
 
-@import 'partials/header';
 
-@import 'partials/main';
+/* File specifici per varie sezioni del mio sito */
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
 
-@import 'partials/footer';
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+// elementi
+@import "partials/buttons";
