@@ -1,13 +1,31 @@
 .first-section {
-    height: 400px;
+    height: 300px;
     background-image: url('/img/jumbotron.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
     img {
         padding-left: 150px;
         position: absolute;
         bottom: 218px;
+    }
+}
+.second-section {
+    background-color: $bgComicsList;
+    .comics-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    a{
+        color: white;
+    }
+    .img-box{
+        height: 300px;
+        weight: 200px;
+    }
+    .comic-box{
+        margin: 10px;
     }
 }
 .third-section {
